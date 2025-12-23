@@ -9,13 +9,13 @@ var nivel = window.location.search
 nivel = nivel.replace('?', '')
 
 if(nivel === 'normal'){
-    criatempo = 1500
-
-} else if (nivel === 'dificil'){
     criatempo = 1000
 
+} else if (nivel === 'dificil'){
+    criatempo = 750
+
 } else if (nivel === 'chuck'){
-    criatempo = 700
+    criatempo = 500
 
 }
 
@@ -103,4 +103,5 @@ function ladorand(){
         case 1:
             return 'ladoB'
     }
+
 }
